@@ -10,7 +10,7 @@
 
 <div class="mãe">
 
-    <form>
+    <form action="/usuarios/cadastro" method="POST">
 
         <main class="container">
 
@@ -21,39 +21,35 @@
             </div>
 
             <div class="caixas">
-
+                <label for="nome"></label>
                 <input id="nome" type="text" name="nome" placeholder="nome completo">
-
             </div>
 
             <div class="caixas">
-
+                <label for="email"></label>
                 <input id="email" type="email" name="email" placeholder="E-mail">
-
             </div>
 
             <div class="caixas">
-
+                <label for="telefone"></label>
                 <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" >
-
             </div>
 
             <div class="caixas">
+                <label for="cpf"></label>
+                <input id="cpf" type="text" name="cpf" placeholder="000.000.000-00" >
+            </div>
 
+            <div class="caixas">
                 <input id="senha" type="password" name="senha" placeholder="senha">
-
             </div>
 
             <div class="caixas">
-
                 <input id="confirma" type="password" name="confirma" placeholder="confirme a senha">
-
             </div>
 
             <div>
-
                 <button id="botao" type="submit" class="botao">Pronto?</button>
-
             </div>
 
         </main>

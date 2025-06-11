@@ -15,19 +15,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID userId;
 
-    @Column(name = "name")
+    @Column(name = "nome")
     private String name;
 
     @Column(name = "email")
     private String email;
 
-    @Column(name = "password")
+    @Column(name = "senha")
     private String password;
 
-    @Column(name = "cep")
-    private String cep;
-
-    @Column(name = "phone")
+    @Column(name = "telefone")
     private String phone;
 
     @Column(name = "cpf")
@@ -39,12 +36,11 @@ public class User {
     @UpdateTimestamp
     private Instant updateTimestamp;
 
-    public User(UUID userId, String name, String email, String password, String cep, String phone, String cpf, Instant creationTimestamp, Instant updateTimestamp) {
+    public User(UUID userId, String name, String email, String password, String phone, String cpf, Instant creationTimestamp, Instant updateTimestamp) {
         this.userId = userId;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.cep = cep;
         this.phone = phone;
         this.cpf = cpf;
         this.creationTimestamp = creationTimestamp;
@@ -84,14 +80,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
     }
 
     public String getPhone() {
