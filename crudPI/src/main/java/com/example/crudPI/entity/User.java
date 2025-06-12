@@ -15,20 +15,20 @@ public class User {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID userId;
 
-    @Column(name = "nome")
+    @Column(name = "name")
     private String name;
 
     @Column(name = "email")
     private String email;
 
-    @Column(name = "senha")
-    private String password;
-
-    @Column(name = "telefone")
-    private String phone;
-
     @Column(name = "cpf")
     private String cpf;
+
+    @Column(name = "phone")
+    private String phone;
+
+    @Column(name = "password")
+    private String password;
 
     @CreationTimestamp
     private Instant creationTimestamp;
@@ -90,13 +90,9 @@ public class User {
         this.phone = phone;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
+    public String getCpf() {return cpf;}
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+    public void setCpf(String cpf) {this.cpf = cpf;}
 
     public Instant getCreationTimestamp() {
         return creationTimestamp;

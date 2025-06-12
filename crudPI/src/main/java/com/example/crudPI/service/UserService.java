@@ -27,8 +27,7 @@ public class UserService {
         var entity = new User(); // Use o construtor padrão ou um específico sem ID
         entity.setName(creatUserDto.name());
         entity.setEmail(creatUserDto.email());
-        entity.setPassword(creatUserDto.password()); // Considere criptografar a senha!
-        entity.setCep(creatUserDto.cep());
+        entity.setPassword(creatUserDto.password()); // Considere criptografar a senha
         entity.setPhone(creatUserDto.phone());
         entity.setCpf(creatUserDto.cpf());
         // As anotações @CreationTimestamp cuidarão disso, remova a configuração manual
@@ -66,10 +65,6 @@ public class UserService {
 
             if (updateUserDto.password() != null) {
                 user.setPassword(updateUserDto.password());
-            }
-
-            if (updateUserDto.cep() != null) {
-                user.setCep(updateUserDto.cep());
             }
 
             if (updateUserDto.phone() != null) {
