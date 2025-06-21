@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('botaoCadastro').addEventListener('click', function (e) {
         e.preventDefault(); // evita o envio do formulário
 
-        const nome = document.getElementById('nome').value.trim();
+        const nome = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
-        const telefone = document.getElementById('telefone').value.trim();
-        const senha = document.getElementById('senha').value;
-        const confirma = document.getElementById('confirmarSenha').value;
+        const telefone = document.getElementById('phone').value.trim();
+        const senha = document.getElementById('password').value;
+        const confirma = document.getElementById('confirma').value;
 
         let erros = [];
 

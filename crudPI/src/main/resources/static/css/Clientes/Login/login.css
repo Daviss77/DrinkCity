@@ -59,6 +59,16 @@ body{
     margin: -15px 0 15px;
 }
 
+#toggleSenha{
+    position: absolute;
+    right: 23px;
+    top: 56%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+
 .lembrar-senha label input{
     accent-color: #fff;
     margin-right: 5px;
